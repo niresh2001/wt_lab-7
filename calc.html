@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <br><br> <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 offset-4 mt-5 my-3 new">
+          <h2>Simple Calculator</h2>
+
+          <form>
+            <label for="fn" class="form-label">First Number</label>
+            <input type="text" class="form-control" id="fn" name="a" />
+            <label for="sn" class="form-label">Second number</label>
+            <input type="text" class="form-control" id="gpa2" name="b" />
+
+            <button
+              type="submit"
+              class="btn btn-primary mt-3 sub ms-5"
+              id="add"
+              formaction="/calc/add"
+            >
+              +
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary mt-3 sub ms-5"
+              id="sub"
+              formaction="/calc/sub"
+            >
+              -
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary mt-3 sub ms-5"
+              id="mul"
+              formaction="/calc/mul"
+            >
+              *
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary mt-3 sub ms-5"
+              id="div"
+              formaction="/calc/div"
+            >
+              /
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #05386b;
+    background-color: #5cdb95;
+  }
+  .new {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #8ee4af;
+
+  }
+  .btn {
+    background-color: #05386b;
+    color: #edf5e1;
+  }
+  input {
+    background-color: #edf5e1 !important;
+    color: #05386b !important;
+  }
+</style>
